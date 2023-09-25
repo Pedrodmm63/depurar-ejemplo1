@@ -12,7 +12,18 @@ var nombres=[];
 
 var NUMERO_NOMBRES=10;
 
+function anadirnombres(nombres, NUMERO_NOMBRES) {
 
+    for(let i = 0; i < NUMERO_NOMBRES; i++) {
+
+        let nombre = prompt("Escriba aqui el nombre")
+        nombres[i] = nombre;
+    }
+    return nombres;
+}
+
+let resultado = anadirnombres(nombres, NUMERO_NOMBRES);
+console.log(resultado);
 
 
 /* AVISOS (WARNING) */
